@@ -38,3 +38,4 @@ When Eu seleciono a opção de prosseguir com a compra
 Then eu posso ver uma mensagem de aviso sobre o assento já ter sido escolhido por outro cliente
 And Eu continuo na página de seleção de assento
 And Eu posso ver o assento “E35” está marcado como indisponível
+And Eu sou notificado para escolher o “assento” antes do tempo acabar
