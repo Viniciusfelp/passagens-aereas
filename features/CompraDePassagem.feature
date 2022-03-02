@@ -38,3 +38,9 @@ When Eu seleciono a opção de prosseguir com a compra
 Then eu posso ver uma mensagem de aviso sobre o assento já ter sido escolhido por outro cliente
 And Eu continuo na página de seleção de assento
 And Eu posso ver o assento “E35” está marcado como indisponível
+
+Scenario: escolha do voo
+Given Estou na página de seleção de “origem” e “destino” e “ida” e “volta”
+And Eu preencho a “origem” com “REC”, “destino” com “GRU”, “ida” com “25/04/2022”, volta com “03/05/2022”
+When Eu seleciono a opção de “buscar voos”
+Then Eu sou redirecionado para a página de “voos”
