@@ -23,7 +23,7 @@ And Eu posso ver que o campo de “cvv” continua em branco
 
 Scenario: voos não disponíveis
 Given Estou na página de seleção de “origem” e “destino” e “ida” e “volta”
-And Eu preencho a “origem” com “REC”, “destino” com “GRU”, “ida” com “21/02/2022”, volta com “23/02/2022”
+And Eu preencho a “origem” com “REC”, “destino” com “GRU”, “ida” com “25/02/2022”, volta com “28/02/2022”
 When Eu seleciono a opção de “buscar voos”
 Then Eu sou redirecionado para a página de “voos”
 And Eu posso ver uma mensagem dizendo que não há voos disponíveis para as datas e locais escolhidos
