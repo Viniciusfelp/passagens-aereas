@@ -39,3 +39,16 @@ Then eu posso ver uma mensagem de aviso sobre o assento já ter sido escolhido p
 And Eu continuo na página de seleção de assento
 And Eu posso ver o assento “E35” está marcado como indisponível
 And Eu sou notificado para escolher o “assento” antes do tempo acabar
+
+Scenario: escolha do voo
+Given Estou na página de seleção de “origem” e “destino” e “ida” e “volta”
+And Eu preencho a “origem” com “REC”, “destino” com “GRU”, “ida” com “25/04/2022”, volta com “03/05/2022”
+When Eu seleciono a opção de “buscar voos”
+Then Eu sou redirecionado para a página de “voos”
+
+Scenario: adição de bagagem
+Given Estou na página de “adição de bagagem”
+And Eu tenho a opção “bagagem de 23 kg” adicionada ao meu “carrinho”
+When Eu seleciono a opção de “salvar” as escolhas
+Then Eu posso ver uma mensagem de sucesso
+And Eu vejo a “bagagem de 23 kg” adicionadas às minhas “informações de voo”
