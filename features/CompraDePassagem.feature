@@ -51,4 +51,5 @@ Given Estou na página de “adição de bagagem”
 And Eu tenho a opção “bagagem de 23 kg” adicionada ao meu “carrinho”
 When Eu seleciono a opção de “salvar” as escolhas
 Then Eu posso ver uma mensagem de sucesso
-And Eu vejo a “bagagem de 23 kg” adicionadas às minhas “informações de voo”
+And Eu vejo a “bagagem de 23 kg” adicionada às minhas “informações de voo”
+And Eu sou redirecionada para a página de “pagamento”
