@@ -36,7 +36,6 @@ And É possível realizar a submissão de um novo formulário de login
 Scenario: Login mal sucedido, CPF inválido
 Given Estou na página “login”
 And o CPF "000.000.000-00" é um CPF inválido pois não atende as regras de validação de CPF
-And uma senha "senha"
 When Preencho o campo de usuário com “000.000.000-00”
 And Preencho o campo de senha com "senha"
 And Submeto esse formulário 
