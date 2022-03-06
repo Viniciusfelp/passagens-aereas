@@ -31,3 +31,13 @@ When preencho o campo de usuário “001.002.003-10”
 And Submeto para a recuperação de senha
 Then É enviado um email com instruções de recuperação de senha para o email do usuário
 And Sou redirecionado para a página “login”
+
+Scenario: Login mal sucedido, CPF inválido
+Given Estou na página “login”
+And o CPF "000.000.000-00" é um CPF inválido pois não atende as regras de validação de CPF
+And uma senha "senha"
+When Preencho o campo de usuário com “000.000.000-00”
+And Preencho o campo de senha com "senha"
+And Submeto esse formulário 
+Then Uma mensagem de CPF inválido é mostrada
+And Permanence na mesma página
