@@ -1,6 +1,7 @@
 Scenario: Login com sucesso
 Given Estou na página “login”
 And Existe um usuário com login “001.002.003-10” no sistema
+And a senha do usuário é "senha"
 When Preencho o campo de usuário com “001.002.003-10”
 And Preencho o campo de senha com “senha”
 And Submeto esse formulário
@@ -48,5 +49,4 @@ And Estou na "página inicial"
 When Clico em "sair"
 And Confirmo que desejo sair
 Then É feito o logout do usuário
-And Para acessar o sistema é preciso ser feito o login novamente
 And A página é redirecionada para a página "login" 
