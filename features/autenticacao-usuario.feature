@@ -31,3 +31,4 @@ When preencho o campo de usuário “001.002.003-10”
 And Submeto para a recuperação de senha
 Then É enviado um email com instruções de recuperação de senha para o email do usuário
 And Sou redirecionado para a página “login”
+And É possível realizar a submissão de um novo formulário de login
