@@ -48,5 +48,4 @@ And Estou na "página inicial"
 When Clico em "meu perfil"
 And Seleciono "sair"
 Then É feito o logout do usuário
-And Para acessar o sistema é preciso ser feito o login novamente
 And A página é redirecionada para a página "login" 
