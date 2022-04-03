@@ -1,0 +1,33 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+        0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 552px;
+    max-width: 100%;
+    min-height: 417px;
+}
+
+.page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f6f5f7;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.box {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+i:hover{
+    cursor: pointer;
+}
+
