@@ -241,8 +241,6 @@ footer a {
     text-decoration: none;
 }
 
-
-
 input.ng-invalid.ng-touched {
   border: 1px solid red;
 }
@@ -257,4 +255,13 @@ input.ng-valid.ng-touched {
 
 select.ng-valid.ng-touched {
   border: 1px solid green;
+}
+
+.page {
+  background: #f6f5f7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
