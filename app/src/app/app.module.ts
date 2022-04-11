@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
+import { Autenticacao } from './services/auth.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.componen
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES),
   ],
-  providers: [],
+  providers: [Autenticacao],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
