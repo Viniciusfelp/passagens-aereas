@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class ="LogoNome">
+        <a class="navbar-brand" href="#">
+            NomeEmpresa</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+              Início</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="\cancelar-voos">
+              Cancelar Voos</a>
+        </li>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Pesquisar</button>
+          </form>
+      </ul>
+    </div>
+  </nav>
+
+  <body class="cancelarBody">
+    <p class="pIniCanc">
+        &nbsp;&nbsp;&nbsp;&nbsp; Aqui você pode cancelar os vôos que desejar. Lembre-se que essa ação é irreversível!
+    </p>
+
+    <div class="container-fluid">
+        <table>
+          <tr>
+            <th>Vôo</th>
+            <th>Data de embarque</th>
+            <th>Data de desembarque</th>
+            <th>Destino</th>
+            <th>Você deseja cancelar esse vôo?</th>
+          </tr>
+          <tr>
+              <td>voo</td>
+              <td>embarque</td>
+              <td>desembarque</td>
+              <td>destino</td>
+              <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                  </label></td>
+              </tr>
+          </table>
+          <button type="button" class="btn btn-primary btn-cancelar">Cancelar</button>
+    </div>
+
+  </body>
