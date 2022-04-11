@@ -11,6 +11,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
+
+import { NotificacaoComponent } from './notificacao/notificacao.component';
 import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
 
 @NgModule({
@@ -18,7 +20,8 @@ import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
     AppComponent,
     LoginComponent,
     EsqueceuSenhaComponent,
-    CancelarVooComponent
+    CancelarVooComponent,
+    NotificacaoComponent
   ],
   imports: [
     BrowserModule,
