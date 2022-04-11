@@ -1,3 +1,12 @@
+body {
+    font-family: 'Anek', sans-serif;
+}
+@font-face {
+          font-family: 'Anek';
+          src: url('/app/src/app/Fonts/AnekTamil-VariableFont_wdth\,wght.ttf');
+          font-weight: normal;
+          font-style: normal;
+        }
 nav {
     margin-left: 0%;
     margin-top: 0%;
@@ -75,10 +84,6 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-.cancelarBody {
-    margin-top: 1.5%;
-}
-
 .container-fluid {
     min-width: 557px;
 }
@@ -87,8 +92,13 @@ td {
     color: white;
 }
 
-.btn-cancelar {
+.btn-cancelarInicial {
     background-color: #0B1840;
     border-color: #0B1840;
     margin-left: 1.5%;
+}
+
+.btn-cancelarFinal {
+    background-color: #0B1840;
+    border-color: #0B1840;
 }
