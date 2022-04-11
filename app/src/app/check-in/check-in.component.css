@@ -15,6 +15,7 @@ p{
 .check-in-container {
     height: 100vh;
     position: relative;
+    padding:0.75rem;
 }
 
 .check-in-container ul {
@@ -34,6 +35,12 @@ p{
 }
 
 .check-in-dados{
+    display: flex;
+}
+
+.check-in-dados p{
+    margin-left: 4rem;
+    font-weight: bold;
 }
 
 .check-in-button{
@@ -65,12 +72,12 @@ p{
     right: 0;
     top:0;
     bottom:0;
-
+    display: none;
 }
 
 .check-in-text-confirm{
+    margin-top: 20px;
 }
-
 .check-in-buttons{
     margin-top:120px;
     display: flex;
@@ -88,4 +95,31 @@ p{
 
 .check-in-cancel{
     background-color: rgb(240, 68, 68);
+}
+
+@media screen and (max-width: 768px) {
+    .check-in-modal {
+        width: 90%;
+        height: 150px;
+    }
+
+    .check-in-modal {
+        font-size: 0.9rem;
+    }
+
+    .check-in-modal h4{
+        font-size: 1rem;
+    }
+
+    .check-in-modal2 {
+        height: 100%;
+    }
+
+    .check-in-buttons{
+        margin-top:45px;
+    }
+
+    .check-in-button button {
+        padding: 5px 16px;
+    }
 }
