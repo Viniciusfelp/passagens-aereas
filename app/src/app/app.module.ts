@@ -11,12 +11,14 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
+import { CheckInComponent } from './check-in/check-in.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    EsqueceuSenhaComponent
+    EsqueceuSenhaComponent,
+    CheckInComponent
   ],
   imports: [
     BrowserModule,
