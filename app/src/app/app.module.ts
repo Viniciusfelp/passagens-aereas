@@ -12,12 +12,15 @@ import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
 import { Autenticacao } from './services/auth.service';
+import { NotificacaoComponent } from './notificacao/notificacao.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    EsqueceuSenhaComponent
+    EsqueceuSenhaComponent,
+    NotificacaoComponent,
+
   ],
   imports: [
     BrowserModule,
