@@ -1,6 +1,6 @@
 <div class="page">
   <div class="container" id="container">
-      <div class="form-container sign-up-container">
+      <div class="form-container sign-up-container hidden-xs">
         <form [formGroup]="formularioCadastro" (ngSubmit)="cadastro()">
           <h1 class="mb-2">Crie uma conta</h1>
   
@@ -14,7 +14,7 @@
           </div>
           
           <div class="form-floating form-group">
-            <input type="password" class="form-control" id="floatingInputPassword" placeholder=" " formControlName="senha">
+            <input type="password" name="password" class="form-control" id="floatingInputPassword" autocomplete="off" placeholder=" " formControlName="senha">
             <label for="floatingInputPassword" style="font-size: 10pt;">Senha</label>
           </div>
           
@@ -39,7 +39,7 @@
             <span id="cpf_invalido"></span>
           </div>
           <div class="form-group">
-            <input type="password" placeholder="Senha" formControlName="senha"/>
+            <input type="password" name="password" autocomplete="on" placeholder="Senha" formControlName="senha"/>
           </div>
           <a routerLink="/recuperar-senha">Esqueceu a senha?</a>
           <button type="submit">Entrar</button>
