@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>Buscar Voos</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
+
+    <link type="text/css" rel="stylesheet" href="pagamento.component.css" />
+    <script></script>
+
+</head>
+
+<body>
+    <div id="payment" class="section">
+        <div class="section-center">
+            <div class="container">
+                <div class="row">
+                    <h2>Pagamento</h2>
+                    <div class="col-md-7 col-md-offset-1">
+                        <div class="payment-form">
+                            <form>
+                                <div class="form-group">
+									<div class="form-checkbox">
+										<label for="credito">
+											<input type="radio" id="credito" name="payment-type">
+											<span></span>Cartão de crédito
+										</label>
+										<label for="debito">
+											<input type="radio" id="debito" name="payment-type">
+											<span></span>Cartão de débito
+										</label>
+                                        <label for="boleto">
+											<input type="radio" id="boleto" name="payment-type">
+											<span></span>Boleto
+										</label>
+									</div>
+								</div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <span class="form-label">Número do Cartão</span>
+                                            <input class="form-control" type="text" placeholder="Digite o número do cartão">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <span class="form-label">Titular</span>
+                                            <input class="form-control" type="text" placeholder="Digite o nome que aparece no cartão">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <span class="form-label">Data de expiração</span>
+                                            <input class="form-control" type="text" placeholder="mm/aa">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <span class="form-label">CVV</span>
+                                            <input class="form-control" type="text" placeholder="Código de segurança">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-btn">
+                                    <button class="submit-btn">Confirmar Pagamento</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
