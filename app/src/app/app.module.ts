@@ -15,6 +15,9 @@ import { BuscarVooComponent } from './buscar-voo/buscar-voo.component';
 import { SelecionarVooComponent } from './selecionar-voo/selecionar-voo.component';
 import { SelecionarAssentoComponent } from './selecionar-assento/selecionar-assento.component';
 import { PagamentoComponent } from './pagamento/pagamento.component';
+import { Autenticacao } from './services/auth.service';
+import { NotificacaoComponent } from './notificacao/notificacao.component';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +28,7 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
     SelecionarVooComponent,
     SelecionarAssentoComponent,
     PagamentoComponent
+    NotificacaoComponent,
   ],
   imports: [
     BrowserModule,
@@ -35,7 +39,7 @@ import { PagamentoComponent } from './pagamento/pagamento.component';
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES),
   ],
-  providers: [],
+  providers: [Autenticacao],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
