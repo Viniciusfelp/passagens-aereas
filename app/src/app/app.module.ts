@@ -11,16 +11,24 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
+import { BuscarVooComponent } from './buscar-voo/buscar-voo.component';
+import { SelecionarVooComponent } from './selecionar-voo/selecionar-voo.component';
+import { SelecionarAssentoComponent } from './selecionar-assento/selecionar-assento.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
 import { Autenticacao } from './services/auth.service';
 import { NotificacaoComponent } from './notificacao/notificacao.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EsqueceuSenhaComponent,
+    BuscarVooComponent,
+    SelecionarVooComponent,
+    SelecionarAssentoComponent,
+    PagamentoComponent
     NotificacaoComponent,
-
   ],
   imports: [
     BrowserModule,
