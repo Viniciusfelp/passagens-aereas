@@ -27,7 +27,7 @@ import { NotificacaoComponent } from './notificacao/notificacao.component';
     BuscarVooComponent,
     SelecionarVooComponent,
     SelecionarAssentoComponent,
-    PagamentoComponent
+    PagamentoComponent,
     NotificacaoComponent,
   ],
   imports: [
