@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ROUTES } from './app.routes';
 
@@ -19,11 +19,15 @@ import { Autenticacao } from './services/auth.service';
 import { NotificacaoComponent } from './notificacao/notificacao.component';
 
 
+import { NotificacaoComponent } from './notificacao/notificacao.component';
+import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     EsqueceuSenhaComponent,
+    CancelarVooComponent,
     BuscarVooComponent,
     SelecionarVooComponent,
     SelecionarAssentoComponent,
@@ -38,6 +42,7 @@ import { NotificacaoComponent } from './notificacao/notificacao.component';
     }),
     ReactiveFormsModule,
     RouterModule.forRoot(ROUTES),
+    FormsModule
   ],
   providers: [Autenticacao],
   bootstrap: [AppComponent]
