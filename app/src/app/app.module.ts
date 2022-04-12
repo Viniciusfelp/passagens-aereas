@@ -11,6 +11,13 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
+import { BuscarVooComponent } from './buscar-voo/buscar-voo.component';
+import { SelecionarVooComponent } from './selecionar-voo/selecionar-voo.component';
+import { SelecionarAssentoComponent } from './selecionar-assento/selecionar-assento.component';
+import { PagamentoComponent } from './pagamento/pagamento.component';
+import { Autenticacao } from './services/auth.service';
+import { NotificacaoComponent } from './notificacao/notificacao.component';
+
 
 import { NotificacaoComponent } from './notificacao/notificacao.component';
 import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
@@ -21,7 +28,11 @@ import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
     LoginComponent,
     EsqueceuSenhaComponent,
     CancelarVooComponent,
-    NotificacaoComponent
+    BuscarVooComponent,
+    SelecionarVooComponent,
+    SelecionarAssentoComponent,
+    PagamentoComponent,
+    NotificacaoComponent,
   ],
   imports: [
     BrowserModule,
@@ -33,7 +44,7 @@ import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
     RouterModule.forRoot(ROUTES),
     FormsModule
   ],
-  providers: [],
+  providers: [Autenticacao],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

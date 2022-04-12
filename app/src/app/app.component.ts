@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { initializeApp } from 'firebase/app';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  ngOnInit() {
+    let firebaseConfig = {
+      apiKey: "AIzaSyAhvJu__52mfMXdddpQRhYDPWNRDIJr0QA",
+      authDomain: "passagens-aereas-ess.firebaseapp.com",
+      projectId: "passagens-aereas-ess",
+      storageBucket: "passagens-aereas-ess.appspot.com",
+      messagingSenderId: "680421546416",
+      appId: "1:680421546416:web:6090e87bd9bf815b941e75",
+      measurementId: "G-BT67HG3555"
+    };
+
+    // Initialize Firebase
+    initializeApp(firebaseConfig);
+  }
 }
