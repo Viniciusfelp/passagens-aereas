@@ -24,6 +24,35 @@
             <a class="nav-link" href="\cancelar-voo">
                 Cancelar Voos</a>
           </li>
+          <li class="nav-item">
+            <div class="dropdown">
+              <button class="btn btn-outline-secondary" type="button" data-toggle="dropdown">
+                Notificações <span class="badge badge-light">4</span>
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <h2>PROMOÇÃO</h2>
+                  <p>IMPERDIVEL!! Compre uma passagem por apenas R$ 4.10</p>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <h2>PROMOÇÃO</h2>
+                  <p>Aproveite! Viagem para o Sudão do Sul pela metade do preço</p>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <h2>AVISO DE VIAGEM</h2>
+                  <p>Não esqueça, sua viagem para Coreia do Norte é amanhã, boa viagem!</p>
+                  <div class="dropdown-divider"></div>
+                </li>
+                <li>
+                  <h2>PROMOÇÃO</h2>
+                  <p>Viagem para ver o parque das esculturas no Recife, compre uma passagem e ganhe um caldo de cana!</p>
+                  <div class="dropdown-divider"></div>
+                </li>
+              </ul>
+            </div>
+          </li>
         </ul>
       </div>
     </nav>
@@ -40,39 +69,18 @@
             <th>Destino</th>
             <th>Cancelar vôo?</th>
           </tr>
-          <tr>
-              <td>voo</td>
-              <td>embarque</td>
-              <td>origem</td>
-              <td>destino</td>
-              <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+          <tr *ngFor="let v of voos">
+              <td>{{v.codigo}}</td>
+              <td>{{v.embarque}}</td>
+              <td>{{v.origem}}</td>
+              <td>{{v.destino}}</td>
+              <td><input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" checked>
                   <label class="form-check-label" for="flexCheckDefault">
                   </label></td>
               </tr>
           </table>
-          <button type="button" class="btn btn-primary btn-cancelarInicial" data-bs-toggle="modal" 
-          data-bs-target="#popupSenha" (click)="limparCampoSenha()">Cancelar</button>
-    </div>
-    
-    <div class="popUpSenha">
-      <div class="modal fade" id="popupSenha" tabindex="-1" aria-labelledby="popupTitulo" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="popupTitulo">Digite sua senha</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <p>Digite sua senha abaixo para prosseguir com o cancelamento dos vôos selecionados.</p>
-              <label for="senhaCancelar">Senha:</label>
-            <input type="password" class="form-control" id="senhaCancelar" placeholder="..." [(ngModel)]="campoSenha">
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-primary btn-cancelarFinal">Cancelar</button>
-            </div>
-          </div>
-        </div>
-      </div>
+          <button type="button" class="btn btn-primary btn-cancelarInicial" 
+           (click)="cancelarVoos('130123','225323')">Cancelar</button>
     </div>
 
   </body>

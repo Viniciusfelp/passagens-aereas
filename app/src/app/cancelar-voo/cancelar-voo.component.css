@@ -3,7 +3,7 @@ body {
 }
 @font-face {
           font-family: 'Anek';
-          src: url('/app/src/app/Fonts/AnekTamil-VariableFont_wdth\,wght.ttf');
+          src: url('../Fonts/AnekTamil-VariableFont_wdth,wght.ttf');
           font-weight: normal;
           font-style: normal;
         }
