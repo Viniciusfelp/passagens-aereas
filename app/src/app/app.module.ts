@@ -17,9 +17,6 @@ import { SelecionarAssentoComponent } from './selecionar-assento/selecionar-asse
 import { PagamentoComponent } from './pagamento/pagamento.component';
 import { Autenticacao } from './services/auth.service';
 import { NotificacaoComponent } from './notificacao/notificacao.component';
-
-
-import { NotificacaoComponent } from './notificacao/notificacao.component';
 import { CancelarVooComponent } from './cancelar-voo/cancelar-voo.component';
 
 @NgModule({
