@@ -1,12 +1,13 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
+
 .container {
     background-color: #fff;
     border-radius: 10px;
-      box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
-        0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
     position: relative;
     overflow: hidden;
-    width: 552px;
+    width: 510px;
     max-width: 100%;
     min-height: 417px;
 }
@@ -21,13 +22,50 @@
 
 }
 
-.box {
+.btns {
+    margin-top: 25%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-cancelar {
+    border: solid rgba(0, 0, 0, 0) 1px;
+    border-radius: 20px;
+}
+
+.btn-cancelar:hover {
+    background-color: #D7D7D9;
+}
+
+.btn-recuperar {
+    border: solid rgba(0, 0, 0, 0) 1px;
+    border-radius: 20px;
+    background-color: #0B1840;
+    color: white;
+    filter: grayscale(55%);
+}
+
+.btn-recuperar:hover {
+    filter: grayscale(0);
+}
+
+.head {
     width: 100vw;
     display: flex;
     justify-content: space-between;
 }
 
-i:hover{
+i:hover {
     cursor: pointer;
 }
 
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+}
+
+input.ng-valid.ng-touched {
+    border: 1px solid green;
+}
