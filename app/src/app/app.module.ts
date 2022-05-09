@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 
-import { ReactiveFormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { ROUTES } from './app.routes';
 
@@ -12,6 +12,9 @@ import { LoginComponent } from './login/login.component';
 import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
 import { NotificacaoComponent } from './notificacao/notificacao.component';
+import { PagPromocaoComponent } from './pag-promocao/pag-promocao.component';
+import { HomeUsuarioComponent } from './home-usuario/home-usuario.component';
+import { ExtratoPromocoesComponent } from './extrato-promocoes/extrato-promocoes.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,14 @@ import { NotificacaoComponent } from './notificacao/notificacao.component';
     LoginComponent,
     EsqueceuSenhaComponent,
     NotificacaoComponent,
+    PagPromocaoComponent,
+    HomeUsuarioComponent,
+    ExtratoPromocoesComponent,
 
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     NgxMaskModule.forRoot({
       dropSpecialCharacters: false

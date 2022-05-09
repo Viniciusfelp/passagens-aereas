@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PromocaoService} from "./services/promocao.service";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  constructor(private promocaoService : PromocaoService) {
+
+  }
+  criarPromocao($event: any) {
+    this.promocaoService.adicionar($event);
+  }
 }
