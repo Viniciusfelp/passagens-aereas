@@ -1,27 +1,13 @@
 <!--notificações que o usuario recebeu-->
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <div class="panel panel-default">
-        <div class="panel-heading">Notificações</div>
-        <div class="panel-body">
-          <table class="table table-striped">
-            <thead>
-            <tr>
-              <th>Título</th>
-              <th>Descrição</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr *ngFor="let notificacao of notificacoes">
-              <td>{{notificacao.titulo}}</td>
-              <td>{{notificacao.descricao}}</td>
-            </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
+<div class="dropdown">
+  <button class="btn btn-outline-secondary" type="button" data-bs-toggle="dropdown" id="dropdownNotif">
+    Notificações <span class="badge badge-light">{{notificacoes.length}}</span>
+  </button>
+  <ul class="dropdown-menu" aria-labelledby="dropdownNotif">
+    <li *ngFor="let notificacao of notificacoes">
+      <h2 class="h2DropNotif">{{notificacao.titulo}}</h2>
+      <p class="pDropNotif">{{notificacao.descricao}}</p>
+      <div class="dropdown-divider"></div>
+    </li>
+  </ul>
 </div>
-

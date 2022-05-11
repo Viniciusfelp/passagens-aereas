@@ -13,7 +13,6 @@ import { NgxMaskModule } from 'ngx-mask';
 import { EsqueceuSenhaComponent } from './esqueceu-senha/esqueceu-senha.component';
 import { NotificacaoComponent } from './notificacao/notificacao.component';
 import { PagPromocaoComponent } from './pag-promocao/pag-promocao.component';
-import { HomeUsuarioComponent } from './home-usuario/home-usuario.component';
 import { ExtratoPromocoesComponent } from './extrato-promocoes/extrato-promocoes.component';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { ExtratoPromocoesComponent } from './extrato-promocoes/extrato-promocoes
     EsqueceuSenhaComponent,
     NotificacaoComponent,
     PagPromocaoComponent,
-    HomeUsuarioComponent,
     ExtratoPromocoesComponent,
 
   ],
