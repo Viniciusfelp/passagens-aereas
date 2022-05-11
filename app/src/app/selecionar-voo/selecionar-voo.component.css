@@ -1,0 +1,20 @@
+#choose-flight {
+	font-family: 'Lato', sans-serif;
+	background-color: white;
+	background-size: cover;
+	background-position: center;
+	color: #191a1e;
+}
+
+.choose-flight {
+    background-color: #96d4bc;
+}
+
+.container {
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+
+.row {
+	margin-top: 20px;
+}
